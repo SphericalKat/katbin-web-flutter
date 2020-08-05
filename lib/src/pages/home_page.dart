@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:icon_shadow/icon_shadow.dart';
 import 'package:supercharged/supercharged.dart';
 
 class HomePage extends StatelessWidget {
@@ -27,19 +28,30 @@ class HomePage extends StatelessWidget {
                 TextSpan(
                   text: 'Bin',
                   style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'jetbrains-mono',
-                    shadows: [
-                      Shadow(
-                        color: Colors.white,
-                        blurRadius: 5.0,
-                      )
-                    ]
-                  ),
+                      color: Colors.white,
+                      fontFamily: 'jetbrains-mono',
+                      shadows: [
+                        Shadow(
+                          color: Colors.white,
+                          blurRadius: 5.0,
+                        )
+                      ]),
                 )
               ]),
         ),
         backgroundColor: Theme.of(context).cardColor,
+        actions: [
+          IconButton(
+            icon: IconShadowWidget(
+              Icon(
+                Icons.save,
+                color: Colors.white,
+              ),
+              shadowColor: Colors.white,
+            ),
+            onPressed: () {},
+          ),
+        ],
       ),
       body: Center(
         child: Container(

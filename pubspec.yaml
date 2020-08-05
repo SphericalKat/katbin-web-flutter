@@ -12,6 +12,7 @@ dependencies:
   get: ^3.4.2
   dio: ^3.0.9
   supercharged: ^1.8.2
+  icon_shadow: ^1.0.1
 
 dev_dependencies:
   flutter_test:
