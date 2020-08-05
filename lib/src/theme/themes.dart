@@ -19,6 +19,7 @@ final darkTheme = ThemeData(
       borderRadius: BorderRadius.circular(10),
     ),
   ),
+  textTheme: ThemeData.dark().textTheme.apply(fontFamily: 'jetbrains-mono'),
   iconTheme: IconThemeData(color: Colors.white.withOpacity(0.7)),
   dialogTheme: DialogTheme(
     backgroundColor: deepBlue,
