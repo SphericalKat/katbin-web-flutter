@@ -19,6 +19,10 @@ class App extends StatelessWidget {
           name: '/',
           page: () => HomePage(),
         ),
+        GetPage(
+          name: '/:paste',
+          page: () => HomePage(),
+        ),
       ],
     );
   }
